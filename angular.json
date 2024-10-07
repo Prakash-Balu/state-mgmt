@@ -8,6 +8,10 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "@ngrx/schematics:store": {
+          "path": "src/app",
+          "module": "app.config.ts"
         }
       },
       "root": "",
@@ -98,5 +102,11 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false,
+    "schematicCollections": [
+      "@ngrx/schematics"
+    ]
   }
 }
